@@ -2,7 +2,7 @@
 DataPeru.xlsx, Excel file with the data for the Metrics III Project.
 ------------------------------------------------------------------------------------------------------------
 ** Variables **
-gdp: monthly gdp (index, 2007=100)
+gdp: monthly gdp SA (index, 2007=100)
 iL: average loans interest rate in domestic currency	
 iB: average deposits interest rate in domestic currency	
 iN: interbank interest rate in domestic currency	
