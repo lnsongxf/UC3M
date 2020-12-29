@@ -1,27 +1,31 @@
 '----------------------------------------------------------------------------------------
-'Código escrito para el recuadro "Factores externos y fluctuaciones
-'de la economía peruana"
-'----------------------------------------------------------------------------------------
-' (c) Carlos Rojas Quiroz
-'----------------------------------------------------------------------------------------
-' Lima, julio del 2019
+'Code for Metrics III project on the relationship between GDP and interest rates
+'Country: Peru
+'Authors: Tomasso D'Amelio and Carlos Rojas
+'Date: January 2021
 '----------------------------------------------------------------------------------------
 cd "C:\Users\User\Documents\21. Investigación\Choques externos\FKY Replica\Programa"
 wfopen Base01.wf1
 '----------------------------------------------------------------------------------------
-'Características del sistema
+'System's characteristics
 '----------------------------------------------------------------------------------------
-scalar nx			=4				'Número de variables externas
-scalar nd    			=7				'Numero de variables domésticas
-scalar nvar			=nx+nd   	'Numero de variables 
-scalar nt          		=3           	'Términos determinísticos
-scalar nparam 	=nx+nd+nt	'Número de parámetros estimados por ecuación
-scalar numobs	=82 	     	'Número de observaciones
+scalar nvar=nx+nd 'Number of variables
+scalar numobs=82 'Number of observations
+initdate="2003.1"
+enddate="2019.4"
+'----------------------------------------------------------------------------------------
+'Previous calculation
+'----------------------------------------------------------------------------------------
+series b=bc+bcX 'Total bank credit
+series inom=iN*bc/b+ixN*bcX/b 'Average weighted interest rate
+
+
+
+
 scalar lag			=1 			'Número de rezagos
 scalar horz			=40        		'Longitud de la FIR
 scalar nsimul   	=2000  		'Número de simulaciones del bootstrap
-%initdate	="1998.1"
-%enddate	="2018.2"
+
 '----------------------------------------------------------------------------------------
 'Variables del bloque exógeno
 '----------------------------------------------------------------------------------------
