@@ -1,0 +1,30 @@
+VAR Lag Order Selection Criteria						
+Endogenous variables: VAR2 VAR1 						
+Exogenous variables: C						
+Date: 12/30/20   Time: 00:41						
+Sample: 2003M01 2019M12						
+Included observations: 191						
+						
+ Lag	LogL	LR	FPE	AIC	SC	HQ
+						
+0	-733.3364	NA 	 7.569325	 7.699858	 7.733913	 7.713652
+1	-650.1506	 163.7585	 3.303353	 6.870687	 6.972853	 6.912069
+2	-634.3535	 30.76705	 2.919543	 6.747157	  6.917434*	  6.816127*
+3	-627.8578	 12.51534	  2.844353*	  6.721024*	 6.959411	 6.817582
+4	-624.3007	 6.778967	 2.857787	 6.725662	 7.032159	 6.849807
+5	-623.0354	 2.384938	 2.941143	 6.754297	 7.128904	 6.906030
+6	-619.2294	 7.093762	 2.947616	 6.756329	 7.199047	 6.935651
+7	-615.9039	 6.128681	 2.969181	 6.763392	 7.274220	 6.970301
+8	-613.6315	 4.140291	 3.024279	 6.781482	 7.360421	 7.015979
+9	-611.3246	 4.154870	 3.079530	 6.799211	 7.446260	 7.061296
+10	-610.3280	 1.774010	 3.179396	 6.830660	 7.545820	 7.120333
+11	-601.0542	  16.31426*	 3.010273	 6.775436	 7.558706	 7.092697
+12	-598.2145	 4.935903	 3.049122	 6.787587	 7.638967	 7.132435
+						
+						
+ * indicates lag order selected by the criterion						
+ LR: sequential modified LR test statistic (each test at 5% level)						
+ FPE: Final prediction error						
+ AIC: Akaike information criterion						
+ SC: Schwarz information criterion						
+ HQ: Hannan-Quinn information criterion						
